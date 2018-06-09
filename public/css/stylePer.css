@@ -1,0 +1,159 @@
+/*******************************************************************
+- Clases personales
+*******************************************************************/
+
+/* SCROLL */
+::-webkit-scrollbar-thumb {
+    background: #4cae4c;
+}
+
+/* Niveles de padding */
+.pad_1{
+    padding: 20px !important;
+}
+
+.pad_2{
+    padding: 30px !important;
+}
+
+/* Niveles de margin */
+.marg_1{
+    margin: 3% !important;
+}
+
+.marg_2{
+    margin: 6% !important;
+}
+
+.marg_top{
+    margin-top: 10%;
+}
+
+/* Punteros */
+.puntero_mano{
+    cursor:pointer; cursor: hand;
+}
+
+/* Textos */
+.text_justificar{
+    text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Kaushan Script" !important;
+    text-shadow: 1px 1px 1px #aaa !important;
+    margin: 10px;
+}
+
+a{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Fondo para titulos sobre imágenes */
+
+.font_title1{
+    background-color: rgba(71, 75, 71, 0.7) !important;
+    border-radius: 5px;
+}
+
+/* Degradado */
+.degradado{
+    background: linear-gradient(to bottom right, #43a047  , #212121  );
+}
+
+/* Alto de elementos */
+.alto1{
+    height: 430px !important;
+}
+
+/*  HOVER  */
+.elemento_activo:hover{
+    box-shadow: 0 0 10px 5px #bbb;
+}
+
+/* Titulos */
+
+.title_line::before {
+    content: "«";
+    color: #1b5e20;
+}
+.title_line::after { 
+content: "»";
+color: #1b5e20;
+}
+
+/* Bordes */
+.bord_g{
+    border: green 2px solid;
+}
+
+
+/* IMAGENES con alto especifico */
+.img_categorias{
+    height: auto;
+}
+
+@media only screen and (min-width: 601px) {
+    .img_categorias{
+        height: 300px;
+    }
+}
+
+/******************/
+/*     CARDS      */
+/******************/
+
+.cards-container {
+    column-break-inside: avoid;
+  }
+  .cards-container .card {
+    display: inline-block;
+    overflow: visible;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .cards-container {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+    }
+  }
+  @media only screen and (min-width: 601px) {
+    .cards-container {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+    }
+  }
+  @media only screen and (min-width: 993px) {
+    .cards-container {
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      column-count: 3;
+    }
+  }
+/*******************************************************************
+- Soluciones a problemas con el framework
+*******************************************************************/
+
+/* Deja el menu fijo en en la pantalla*/
+.pos_menu_per nav{
+    top: 0px !important;
+}
+
+/* Padding para carousel */
+.padding-per > div{
+    padding: 20px; 
+}
+
+/* Logo idioma */
+.img-idioma{
+    border-radius: 4px;
+    height: 16px;
+    width: auto;
+}
+
+/* Resuelve problema con los dropdown */
+.dropdown-content {
+    width: auto !important;
+}
